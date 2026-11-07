@@ -9,7 +9,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const site = path.join(root,'dist/site');
 const manifest = JSON.parse(fs.readFileSync(path.join(site,'manifest.json'),'utf8'));
 for (const [name, hash] of Object.entries(manifest.files)) assert.equal(createHash('sha256').update(fs.readFileSync(path.join(site,name))).digest('hex'),hash);
-assert.deepEqual(fs.readdirSync(site).sort(), ['.nojekyll','agent','skills','read','404.html','_headers','index.html','manifest.json','中学版-离线试读.html','小学版-离线试读.html','离线阅读版.html'].sort());
+assert.deepEqual(fs.readdirSync(site).sort(), ['.nojekyll','agent','assets','skills','read','404.html','_headers','index.html','manifest.json','中学版-离线试读.html','小学版-离线试读.html','离线阅读版.html'].sort());
 fs.mkdirSync(path.join(root,'work/verification'),{recursive:true});
 const server = spawn(process.execPath, ['build/preview.cjs'], {cwd:root, stdio:['ignore','pipe','pipe']});
 let browser;

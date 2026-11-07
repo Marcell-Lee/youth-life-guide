@@ -13,6 +13,7 @@ try {
  const context=await browser.newContext({viewport:{width:1440,height:900}});const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));
  const base='http://127.0.0.1:4173/';
  await p.goto(base+'#K067');
+ await p.waitForFunction(()=>document.querySelectorAll('#list a').length===83);
  await p.locator('#font-size').click();
  await p.locator('.edition-links a[data-mode="primary"]').click();
  await p.waitForFunction(()=>location.hash==='#K067'&&document.querySelectorAll('#list a').length===79);

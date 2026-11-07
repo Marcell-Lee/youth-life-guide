@@ -12,10 +12,10 @@ http.createServer((req,res) => {
  try { requested = decodeURIComponent(new URL(req.url, 'http://localhost').pathname); }
  catch { res.writeHead(400).end(); return; }
  const file = path.resolve(root, '.' + (requested === '/' ? '/index.html' : requested));
- if (!file.startsWith(root + path.sep) || !/\.(html|json|md)$/.test(file)) { res.writeHead(404).end(); return; }
+ if (!file.startsWith(root + path.sep) || !/\.(html|json|md|js|txt)$/.test(file)) { res.writeHead(404).end(); return; }
  fs.readFile(file, (error,data) => {
   if (error) { res.writeHead(404, {'Content-Type':'text/html; charset=utf-8'}); res.end(fs.readFileSync(path.join(root,'404.html'))); return; }
-  const type = {'.json':'application/json', '.md':'text/markdown', '.html':'text/html'}[path.extname(file)];
+  const type = {'.json':'application/json', '.md':'text/markdown', '.html':'text/html', '.js':'application/javascript', '.txt':'text/plain'}[path.extname(file)];
   res.writeHead(200, {'Content-Type':type+'; charset=utf-8','X-Content-Type-Options':'nosniff'});res.end(data);
  });
 }).listen(4173, '127.0.0.1', () => console.log('Preview: http://127.0.0.1:4173'));

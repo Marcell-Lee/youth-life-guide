@@ -30,6 +30,7 @@ for (const topic of catalog.topics) {
       const start = page.indexOf('const chapters=') + 'const chapters='.length;
       const chapters = JSON.parse(page.slice(start, page.indexOf(';const modeName=', start)));
       const chapter = chapters.find(c => c.id === topic.id);
+      assert.doesNotMatch(chapter.markdown,/\[C\d+(?:[^\]\r\n]*)\]/,'Internal claim markers must not appear in reading text');
       assert.equal(chapter.sourceSha256, item.source_sha256);
       assert.equal(hash(chapter.markdown), item.reader_markdown_sha256);
       assert.deepEqual(chapter.ageRange, item.age_range);

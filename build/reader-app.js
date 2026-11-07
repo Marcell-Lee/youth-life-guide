@@ -38,6 +38,7 @@ const initialLarge=(globalLarge??readSetting(storageKey+':large'))==='true';
 setFont(initialLarge);
 if(globalLarge===null)saveSetting('youth-guide:large',String(initialLarge));
 fontButton.addEventListener('click',()=>{const large=!document.body.classList.contains('large-text');setFont(large);saveSetting('youth-guide:large',String(large))});
+const readingPinyin=createReadingPinyin({article,button:document.getElementById('pinyin-toggle'),status:document.getElementById('reading-status'),scriptURL:pinyinScriptURL,readPreference:()=>readSetting('youth-guide:pinyin'),savePreference:value=>saveSetting('youth-guide:pinyin',value),canAnnotate:()=>current>=0});
 
 function setCatalog(open,focus=false){
  mobileOpen=media.matches&&open;document.body.classList.toggle('catalog-open',mobileOpen);catalog.open=media.matches?mobileOpen:true;
@@ -100,12 +101,14 @@ function render(){
  syncSelected();updateProgress();markArticle(false);
 }
 function markArticle(openFirst){
+ readingPinyin.clear();
  for(const mark of article.querySelectorAll('mark[data-search]'))mark.replaceWith(document.createTextNode(mark.textContent));article.normalize();
- if(!words.length||current<0)return;
+ if(!words.length||current<0){void readingPinyin.refresh();return}
  const walker=document.createTreeWalker(article,NodeFilter.SHOW_TEXT,{acceptNode:node=>node.parentElement.closest('script,style,button,textarea,mark')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
  for(const node of nodes){const fragment=document.createDocumentFragment();appendHighlighted(fragment,node.textContent);for(const mark of fragment.querySelectorAll('mark'))mark.dataset.search='true';node.replaceWith(fragment)}
  if(openFirst){const first=article.querySelector('mark[data-search]');let parent=first?.parentElement;while(parent&&parent!==article){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement}}
+ void readingPinyin.refresh();
 }
 function scrollToArticle(){article.focus({preventScroll:true});article.scrollIntoView({block:'start'})}
 function show(i,scroll=true,historyMode='push'){
@@ -123,6 +126,7 @@ function show(i,scroll=true,historyMode='push'){
  if(scroll){setCatalog(false);scrollToArticle()}
 }
 function showMissing(id){
+ readingPinyin.clear();
  current=-1;requestedId=id;message.replaceChildren();article.replaceChildren();
  const topic=topicDirectory.find(t=>t.id===id),h1=document.createElement('h1');h1.textContent=topic?topic.title:'没有找到这个主题';article.append(h1);article.setAttribute('aria-label',h1.textContent);
  const text=document.createElement('p');text.textContent=topic?'这篇暂时没有'+readerModes[modeName].label+'。可以选择以下版本：':'这个链接中的主题编号不存在，可以从目录重新选择。';article.append(text);

@@ -1,1 +1,11 @@
-* text=auto eol=lf
+* text=auto
+*.mjs text eol=lf
+*.md text
+*.py text eol=lf
+*.cjs text eol=lf
+*.json text
+*.html text
+*.pdf binary
+*.epub binary
+*.mobi binary
+dist/site/** text eol=lf

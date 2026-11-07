@@ -1,0 +1,797 @@
+{
+  "scope": "K041—K083",
+  "method": "仅摘取分龄稿开头明确的年龄和限制；uncertain 表示年龄区间无法从开头确定，不表示专业或可读性验证。无分龄稿记 null。",
+  "items": [
+    {
+      "id": "K041",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁；需要时可以和愿意帮助你的大人一起读  ",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁；需要时可以和愿意帮助你的大人一起读  ",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K042",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K043",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K044",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K045",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K046",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K047",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K048",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K049",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K050",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K051",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K052",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K053",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K054",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "转录小学稿拟供年龄；不代表已验证可读性或完成专业审核。",
+        "adult_support": "6—8 岁安全成人陪同试读，求助信息可直接查看"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K055",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁在安全成人陪同下试读；有眼前需要时求助信息可直接查看"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K056",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K057",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K058",
+      "primary": null,
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K059",
+      "primary": null,
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K060",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "additional_evidence": [
+          "想知道身体的事，可以问，不需要因为好奇而感到羞耻。6—8 岁可以对安全老师或大人说：“我有一个身体的问题，你能用我听懂的话告诉我吗？”不想当众说，可以先说“我想单独问”。"
+        ],
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K061",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K062",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K063",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "qualification": "开头要求安全成人陪读并结合场所演练，适用于所标小学年龄。",
+        "adult_support": "全部适用小学年龄需安全成人陪读并结合场所演练"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K064",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；新增年龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "uncovered_ages": [],
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K065",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K066",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K067",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K068",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K069",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K070",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K071",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K072",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K073",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "qualification": "正文另提示医疗资料主要面向青少年，低龄表达待儿科审阅。",
+        "adult_support": "全部小学年龄建议安全成人陪读；低龄表达待儿科审阅"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K074",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K075",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。",
+        "adult_support": "6—8 岁建议安全成人陪读"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K076",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "转录新小学稿的拟供年龄；不表示专业审阅或儿童试读完成。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K077",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K078",
+      "primary": null,
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K079",
+      "primary": null,
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；新增年龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K080",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "adult_support": "小学版｜6—11 岁",
+        "uncovered_ages": [],
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄区间直接摘自分龄稿开头；不表示完成专业审核或儿童试读。"
+      }
+    },
+    {
+      "id": "K081",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄直接摘自分龄稿，编辑适配未经真人专业审阅和儿童试读。"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄直接摘自分龄稿，编辑适配未经真人专业审阅和儿童试读。"
+      }
+    },
+    {
+      "id": "K082",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄直接摘自分龄稿，编辑适配未经真人专业审阅和儿童试读。"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄直接摘自分龄稿，编辑适配未经真人专业审阅和儿童试读。"
+      }
+    },
+    {
+      "id": "K083",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄直接摘自分龄稿，编辑适配未经真人专业审阅和儿童试读。"
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄直接摘自分龄稿，编辑适配未经真人专业审阅和儿童试读。"
+      }
+    }
+  ]
+}

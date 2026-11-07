@@ -1,0 +1,847 @@
+{
+  "scope": "K001—K040",
+  "date": "2026-10-30",
+  "method": "逐篇读取稿件开头的明确年龄标注及共读/未覆盖提示；仅转录，不推断实际可读性，不构成专业审阅或儿童试读。",
+  "items": [
+    {
+      "id": "K001",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K002",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K003",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K004",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K005",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K006",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁；6—8 岁建议和安全、愿意倾听的大人一起读  ",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K007",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K008",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K009",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K010",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K011",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁；6—8 岁建议安全成人陪读",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K012",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K013",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K014",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K015",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K016",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁；6—8 岁建议安全成人陪读",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K017",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K018",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K019",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K020",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁；6—8 岁需成人陪读",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；6—8岁仅限安全成人陪读，未经过真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁；6—8 岁需成人陪读",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K021",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄，15—17岁为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K022",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K023",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；新增年龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K024",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K025",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K026",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K027",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K028",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K029",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K030",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K031",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K032",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K033",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K034",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K035",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K036",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K037",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K038",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K039",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄；低龄段为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "直接转录新稿年龄，15—17岁为编辑适配，未经真人专业审阅和儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    },
+    {
+      "id": "K040",
+      "primary": {
+        "min_age": 6,
+        "max_age": 11,
+        "evidence": "小学版｜6—11 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": "小学版｜6—11 岁",
+        "uncovered_note": null
+      },
+      "secondary": {
+        "min_age": 12,
+        "max_age": 17,
+        "evidence": "中学版｜12—17 岁",
+        "uncertain": false,
+        "reason": "年龄范围直接来自稿件标注；不代表适龄性已经过真人审阅或儿童试读。",
+        "co_read_note": null,
+        "uncovered_note": null
+      }
+    }
+  ]
+}

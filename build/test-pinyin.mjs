@@ -29,6 +29,20 @@ try{
  assert.ok(rubric.some(([char,sound])=>char==='乐'&&sound==='yuè'));assert.ok(rubric.some(([char,sound])=>char==='乐'&&sound==='lè'));assert.ok(rubric.some(([char,sound])=>char==='长'&&sound==='zhǎng'));assert.ok(rubric.some(([char,sound])=>char==='行'&&sound==='háng'));assert.ok(sample.includes('🙂'));
  fs.mkdirSync(path.join(root,'work/verification/pinyin'),{recursive:true});
  for(const width of [320,375,414,768,1440]){await p.setViewportSize({width,height:900});await p.goto('http://127.0.0.1:4173/?width='+width+'#K001');await p.waitForSelector('#article rt');assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await p.screenshot({path:path.join(root,'work/verification/pinyin/'+width+'.png')})}
+ await p.goto('http://127.0.0.1:4173/'+encodeURIComponent('中学版-离线试读.html')+'#K044');await p.waitForSelector('#article rt');
+ for(const width of [320,375,768,1440])for(const large of [false,true]){
+  await p.setViewportSize({width,height:900});await p.evaluate(large=>document.body.classList.toggle('large-text',large),large);
+  const spacing=await p.locator('#article').evaluate(article=>{
+   let previous,minGap=Infinity,pairs=0;
+   for(const rt of article.querySelectorAll('rt')){
+    const rect=rt.getBoundingClientRect();if(!rect.width||!rect.height)continue;
+    if(previous&&Math.abs(previous.y-rect.y)<1){minGap=Math.min(minGap,rect.left-previous.right);pairs++}previous=rect;
+   }
+   return{minGap,pairs,overflow:document.documentElement.scrollWidth>innerWidth+1};
+  });
+  assert.ok(spacing.pairs>20);assert.ok(spacing.minGap>=1,`Crowded pinyin at ${width}px, large=${large}: ${spacing.minGap}`);assert.ok(!spacing.overflow);
+  await p.screenshot({path:path.join(root,'work/verification/pinyin/spacing-'+width+(large?'-large':'')+'.png')});
+ }
  await p.locator('#pinyin-toggle').click();assert.equal(await p.locator('#article ruby').count(),0);
  const off=await browser.newContext();await off.route('**/assets/reading-pinyin.js',r=>r.abort());const failed=await off.newPage();await failed.goto('http://127.0.0.1:4173/');await failed.locator('#pinyin-toggle').click();await failed.waitForFunction(()=>document.getElementById('reading-status').textContent.includes('恢复原文'));assert.equal(await failed.locator('#article ruby').count(),0);
  const delayed=await browser.newContext();let release;const gate=new Promise(resolve=>release=resolve);await delayed.route('**/assets/reading-pinyin.js',async route=>{await gate;await route.continue()});

@@ -31,6 +31,8 @@
 | `agent/topics/K043/evidence.md` | 依据与核查 |
 | `agent/manifest.json` | 发布提交及资源哈希 |
 
+供普通浏览器阅读的无脚本页面另在 `read/index.html`，单篇路径为 `read/primary/K043.html` 等。阅读页在切换版本时保持主题，缺少某个版本会明确给出其他可用版本；Agent 检索仍优先使用上表的 Markdown 与 JSON 接口。
+
 JSON 顶层含 `schema_version`、`commit`、`base_url`、`content_license`、`age_note`、`topics`。每题含 `id`、`available_versions`、`versions`。`versions` 以 `all`、`primary`、`secondary`、`evidence` 为键，每项记录标题、年龄范围、正文 URL、阅读 URL、源文件路径与固定提交链接、源文件及产物的 SHA-256。正文项另含阅读页内嵌 Markdown 的哈希。
 
 `age_range` 是 `{min,max}` 或 `null`，只转录已确认与稿件匹配的年龄标注。综合版和依据为 `null`，不能解释成适用于所有年龄。缺失的小学稿没有文件，也不出现在 `available_versions` 中。

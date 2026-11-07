@@ -1,6 +1,6 @@
 {
   "name": "youth-life-guide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "少年生活指南：阅读网站与 Agent 技能",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "scripts": {
     "catalog": "node build/build-catalog.cjs",
     "build": "node build/build-site.cjs",
-    "test": "node build/build-catalog.cjs --check && node build/test-agent.mjs && node build/test-readers.mjs dist/site && node build/test-site.mjs",
+    "test": "node build/build-catalog.cjs --check && node build/test-agent.mjs && node build/test-readers.mjs dist/site && node build/test-site.mjs && node build/test-reader-flows.mjs",
     "preview": "node build/preview.cjs"
   },
   "dependencies": { "marked": "17.0.5" },

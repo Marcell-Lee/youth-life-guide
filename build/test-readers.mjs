@@ -78,16 +78,20 @@ try {
       await page.evaluate(() => {
         for (const chapter of chapters) {
           if (/内部研究稿|内部试读稿/.test(chapter.markdown)) throw new Error(chapter.id + ': 重复稿件声明');
+          const parser = new DOMParser();
+          const plain = html => parser.parseFromString(html,'text/html').body.textContent.replace(/\s+/g,'');
+          if (plain(readerChapterHTML(chapter,modeName)) !== plain(chapter.html.replace('<p>综合正文</p>',''))) throw new Error(chapter.id + ': 段落折叠改变了正文文字');
         }
       });
       assert((await page.locator("#progress").innerText()).includes(`1 / ${reader.count}`), `${reader.name}/${viewport.name}: 初始计数错误`);
 
       if (viewport.name === "mobile") {
-        await page.locator("#catalog summary").click();
+        await page.locator(".catalog-trigger").click();
       }
       await page.locator("#search").fill("朋友");
       assert((await page.locator("#list a").count()) > 0, `${reader.name}/${viewport.name}: 搜索“朋友”无结果`);
       await page.locator("#search").fill("");
+      if (viewport.name === 'mobile') await page.locator('#close-catalog').click();
 
       await page.locator("#evidence summary").click();
       assert(await page.locator("#evidence").evaluate((element) => element.open), `${reader.name}/${viewport.name}: 依据区未打开`);
@@ -115,12 +119,14 @@ try {
       if (reader.age) {
         const age = viewport.name === "desktop" ? (reader.name === "primary" ? "6" : "12") : reader.name === "primary" ? "11" : "17";
         const expected = await page.evaluate((age) => chapters.filter(c => c.ageRange && Number(age) >= c.ageRange.min && Number(age) <= c.ageRange.max).length, age);
-        await page.locator("#age").selectOption(age);
-        await page.waitForFunction(
-          (count) => document.querySelector("#count")?.textContent?.includes(`${count} 个主题`),
-          expected,
-        );
-        assert((await page.locator("#list a").count()) === expected, `${reader.name}/${viewport.name}: 年龄筛选数错误`);
+        if (await page.locator("#age").count()) {
+          if (viewport.name === 'mobile') await page.locator('.catalog-trigger').click();
+          await page.locator("#age").selectOption(age);
+          assert((await page.locator("#list a").count()) === expected, `${reader.name}/${viewport.name}: 年龄筛选数错误`);
+        } else {
+          const ranges = await page.evaluate(() => new Set(chapters.filter(c=>c.ageRange).map(c=>c.ageRange.min+'-'+c.ageRange.max)).size);
+          assert(ranges <= 1, 'Only redundant age filters may be hidden');
+        }
       }
 
       const layout = await page.evaluate(() => ({

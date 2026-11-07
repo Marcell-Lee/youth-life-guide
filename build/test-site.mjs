@@ -9,7 +9,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const site = path.join(root,'dist/site');
 const manifest = JSON.parse(fs.readFileSync(path.join(site,'manifest.json'),'utf8'));
 for (const [name, hash] of Object.entries(manifest.files)) assert.equal(createHash('sha256').update(fs.readFileSync(path.join(site,name))).digest('hex'),hash);
-assert.deepEqual(fs.readdirSync(site).sort(), ['.nojekyll','agent','skills','404.html','_headers','index.html','manifest.json','中学版-离线试读.html','小学版-离线试读.html','离线阅读版.html'].sort());
+assert.deepEqual(fs.readdirSync(site).sort(), ['.nojekyll','agent','skills','read','404.html','_headers','index.html','manifest.json','中学版-离线试读.html','小学版-离线试读.html','离线阅读版.html'].sort());
 fs.mkdirSync(path.join(root,'work/verification'),{recursive:true});
 const server = spawn(process.execPath, ['build/preview.cjs'], {cwd:root, stdio:['ignore','pipe','pipe']});
 let browser;
@@ -46,11 +46,12 @@ try {
    if (/内部研究稿|内部试读稿/.test(article.textContent)) throw new Error(chapters[i].id+': repeated editorial warning');
   }
  });
- await page.locator('#catalog summary').click();
+ await page.locator('.catalog-trigger').click();
  await page.locator('#search').fill('zzzz-no-match');
  assert.equal(await page.locator('#list a').count(),0);
  assert.match(await page.locator('#count').innerText(),/没有找到/);
  await page.locator('#search').fill('');
+ await page.locator('#list a[href="#K037"]').evaluate(e=>e.closest('details').open=true);
  await page.locator('#list a[href="#K037"]').click();
  assert.equal(await page.locator('#catalog').evaluate(e=>e.open),false);
  await page.locator('#font-size').click();

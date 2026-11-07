@@ -23,9 +23,9 @@
 
 | 想做什么 | 从这里开始 |
 |---|---|
-| **在线读** | [全部主题](https://marcell-lee.github.io/youth-life-guide/) · [小学版](https://marcell-lee.github.io/youth-life-guide/小学版-离线试读.html) · [中学版](https://marcell-lee.github.io/youth-life-guide/中学版-离线试读.html) |
-| **下载** | [离线阅读包](https://github.com/Marcell-Lee/youth-life-guide/releases/download/v1.0.0/youth-life-guide-v1.0.0.zip) · [独立技能包](https://github.com/Marcell-Lee/youth-life-guide/releases/download/v1.0.0/youth-life-guide-skill-v1.0.0.zip) · [发布记录](https://github.com/Marcell-Lee/youth-life-guide/releases) |
-| **查阅** | [83 个主题目录](docs/主题目录.md) · [按问题找文章](#这本书想回答的问题) · [怎么读](#怎么读) |
+| **在线读** | [综合版](https://marcell-lee.github.io/youth-life-guide/) · [小学版](https://marcell-lee.github.io/youth-life-guide/小学版-离线试读.html) · [中学版](https://marcell-lee.github.io/youth-life-guide/中学版-离线试读.html) |
+| **下载** | [最新版阅读包与技能包](https://github.com/Marcell-Lee/youth-life-guide/releases/latest) · [发布记录](https://github.com/Marcell-Lee/youth-life-guide/releases) |
+| **查阅** | [83 个主题目录](docs/主题目录.md) · [静态阅读](https://marcell-lee.github.io/youth-life-guide/read/index.html) · [按问题找文章](#这本书想回答的问题) · [怎么读](#怎么读) |
 | **交给 AI** | [使用与安装](docs/agent使用说明.md) · [技能文件](skills/youth-life-guide/SKILL.md) · [机器可读目录](https://marcell-lee.github.io/youth-life-guide/agent/index.json) |
 | **核对依据** | 每篇末尾点“查看本篇依据与核查”；[源码目录](docs/主题目录.md)也列出每题的依据卡 |
 | **反馈与参与** | [指出问题或提建议](https://github.com/Marcell-Lee/youth-life-guide/issues) · [查看正文源码](topics/) |
@@ -55,12 +55,12 @@
 ## 怎么读
 
 - **先看眼前的问题。** 不用从头读完。在网页里搜“朋友”“作业”“手机”这样的词，挑一两篇有用的，先试一个自己愿意做的小步骤。
-- **小学和中学分开选。** 进入[小学版](https://marcell-lee.github.io/youth-life-guide/小学版-离线试读.html)或[中学版](https://marcell-lee.github.io/youth-life-guide/中学版-离线试读.html)，再按文章标注的年龄筛选。有需要时可以一起读、停下来聊。
+- **小学和中学分开选。** 进入[小学版](https://marcell-lee.github.io/youth-life-guide/小学版-离线试读.html)或[中学版](https://marcell-lee.github.io/youth-life-guide/中学版-离线试读.html)，参考稿件的年龄与共读提示。综合版按读者展开段落，成人说明可以需要时再看。
 - **孩子可以有自己的想法。** 看完后想一想：哪种做法更适合我？我想先试什么？试过以后，可以继续、调整，也可以先停一停。
 - **大人可以看每篇的成人部分。** 先听孩子怎么看，再商量时间、费用和边界。把适合孩子做的决定留给他，需要成人承担的照护和保护由成人负责。
 - **想核对就展开依据。** 每篇末尾的“查看本篇依据与核查”列出来源、编辑建议和未决项。也可以从[源码主题目录](docs/主题目录.md)直接读依据卡。
-- **想让 AI 帮你找。** 打开网页里的“交给你的 AI”，复制提示，补上问题；也可以[安装技能](docs/agent使用说明.md)。AI 应先读正文，再按年龄回答，并给出篇章出处。
-- **想离线读。** 下载[阅读包](https://github.com/Marcell-Lee/youth-life-guide/releases/download/v1.0.0/youth-life-guide-v1.0.0.zip)，解压后打开 `site/index.html`。保存下来的版本不会自动更新，更新内容可以回到在线版查看。
+- **想让 AI 帮你找。** 打开阅读工具中的“交给 AI”，复制提示，补上问题；也可以[安装技能](docs/agent使用说明.md)。AI 应先读正文，再按年龄回答，并给出篇章出处。
+- **想离线读。** 下载[最新阅读包](https://github.com/Marcell-Lee/youth-life-guide/releases/latest)，解压后打开 `site/index.html`。不使用 JavaScript 时可以打开 `site/read/index.html`。保存下来的版本不会自动更新，更新内容可以回到在线版查看。
 
 <details>
 <summary>版本范围与内容说明</summary>

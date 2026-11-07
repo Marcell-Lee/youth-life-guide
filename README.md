@@ -14,7 +14,7 @@
 
 把下面这段和你的问题一起发给支持读取网页的 AI：
 
-> 请读取并使用 https://marcell-lee.github.io/youth-life-guide/skills/youth-life-guide/SKILL.md 。若不能安装，请在当前对话使用。先查相关正文与依据，按年龄回答，附主题出处和阅读链接。我的问题是：……
+> 请读取并使用 https://raw.githubusercontent.com/Marcell-Lee/youth-life-guide/main/skills/youth-life-guide/SKILL.md 。若不能安装，请在当前对话使用。先查相关正文与依据，按年龄回答，附主题出处和阅读链接。我的问题是：……
 
 技能名称是 `youth-life-guide`。可以将 `skills/youth-life-guide/` 复制到 agent 支持的技能目录；本仓库内的使用入口在 [AGENTS.md](AGENTS.md)。无需密钥、后台或 MCP 服务。
 

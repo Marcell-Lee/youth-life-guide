@@ -4,7 +4,7 @@
 
 把以下提示发给支持联网读取的 AI，再补充问题：
 
-> 请读取并使用 https://marcell-lee.github.io/youth-life-guide/skills/youth-life-guide/SKILL.md 。若不能安装，请在当前对话使用。先查相关正文与依据，按年龄回答，附主题出处和阅读链接。我的问题是：……
+> 请读取并使用 https://raw.githubusercontent.com/Marcell-Lee/youth-life-guide/main/skills/youth-life-guide/SKILL.md 。若不能安装，请在当前对话使用。先查相关正文与依据，按年龄回答，附主题出处和阅读链接。我的问题是：……
 
 例如：“我十岁，喜欢画画，但不想参加比赛，还能继续吗？”或“孩子总等我安排，怎样把日常选择慢慢交给他？”
 

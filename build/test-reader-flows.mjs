@@ -77,10 +77,17 @@ try {
  const headerRect=await m.locator('header').boundingBox();assert.ok(headerRect.y>=0);
  await m.locator('#agent-entry summary').click();await m.keyboard.press('Escape');assert.equal(await m.locator('#agent-entry').evaluate(e=>e.open),false);
  fs.mkdirSync(path.join(root,'work/verification/reader-redesign'),{recursive:true});
- for(const width of [320,375,414,768,1440]) {
+ for(const width of [320,375,414,768,1024,1440,1920,2560]) {
   await m.setViewportSize({width,height:900});await m.goto(base+'?viewport='+width+'#K001');
   assert.ok(await m.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   assert.ok((await m.locator('#article').boundingBox()).width>(width<400?250:350));
+  if(width>980){
+   const sidebar=await m.locator('.sidebar').boundingBox(),main=await m.locator('main').boundingBox(),brand=await m.locator('.brand').boundingBox();
+   assert.ok(sidebar.x<=65,'Desktop catalog should use the left margin');
+   assert.ok(width-main.x-main.width<=65,'Desktop article should use the right margin');
+   assert.ok(Math.abs(brand.x-sidebar.x)<1,'Header and catalog should align');
+   assert.ok(main.x-sidebar.x-sidebar.width>=31,'Keep space between catalog and reading');
+  }
   await m.screenshot({path:path.join(root,`work/verification/reader-redesign/${width}.png`)});
  }
  const off=await browser.newContext({javaScriptEnabled:false});const n=await off.newPage();await n.goto(base);

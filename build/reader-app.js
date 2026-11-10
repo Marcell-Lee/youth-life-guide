@@ -7,6 +7,11 @@ const media=matchMedia('(max-width: 980px)');
 const storageKey='youth-guide:'+modeName;
 function readSetting(key){try{return localStorage.getItem(key)}catch{return null}}
 function saveSetting(key,value){try{localStorage.setItem(key,value)}catch{}}
+const sectionPreferences={};
+try{
+ const saved=JSON.parse(readSetting('youth-guide:sections')||'{}');
+ if(saved&&typeof saved==='object'&&!Array.isArray(saved))for(const key of ['primary','secondary','adult'])if(typeof saved[key]==='boolean')sectionPreferences[key]=saved[key];
+}catch{}
 let current=-1,requestedId='',scope=[],words=[],routedURL='',mobileOpen=false;
 const indexById=new Map(chapters.map((chapter,i)=>[chapter.id,i]));
 const ordered=topicGroups.flatMap(group=>group.ids).map(id=>indexById.get(id)).filter(i=>i!==undefined);
@@ -107,14 +112,14 @@ function markArticle(openFirst){
  const walker=document.createTreeWalker(article,NodeFilter.SHOW_TEXT,{acceptNode:node=>node.parentElement.closest('script,style,button,textarea,mark')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
  for(const node of nodes){const fragment=document.createDocumentFragment();appendHighlighted(fragment,node.textContent);for(const mark of fragment.querySelectorAll('mark'))mark.dataset.search='true';node.replaceWith(fragment)}
- if(openFirst){const first=article.querySelector('mark[data-search]');let parent=first?.parentElement;while(parent&&parent!==article){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement}}
+ if(openFirst){const first=article.querySelector('mark[data-search]');let parent=first?.parentElement;while(parent&&parent!==article){if(parent.tagName==='DETAILS'&&sectionPreferences[parent.dataset.audience]!==false)parent.open=true;parent=parent.parentElement}}
  void readingPinyin.refresh();
 }
 function scrollToArticle(){article.focus({preventScroll:true});article.scrollIntoView({block:'start'})}
 function show(i,scroll=true,historyMode='push'){
  if(!Number.isInteger(i)||!chapters[i])return;
  current=i;requestedId=chapters[i].id;saveSetting(storageKey+':chapter',requestedId);message.replaceChildren();
- article.innerHTML=readerChapterHTML(chapters[i],modeName,readSetting('youth-guide:audience')||'primary');article.setAttribute('aria-label',chapters[i].title);
+ article.innerHTML=readerChapterHTML(chapters[i],modeName,sectionPreferences);article.setAttribute('aria-label',chapters[i].title);
  document.getElementById('evidence-content').innerHTML=chapters[i].evidenceHtml+chapters[i].extraEvidence.map(e=>'<section id="evidence-'+e.target+'"><h2>补充依据：'+e.target+'</h2>'+e.html+'</section>').join('');
  const evidence=document.getElementById('evidence');evidence.open=false;evidence.hidden=false;
  document.getElementById('static-link').href=staticBase+modeName+'/'+requestedId+'.html';
@@ -160,7 +165,7 @@ document.getElementById('clear-search').addEventListener('click',()=>{search.val
 if(ageSelect)ageSelect.addEventListener('change',()=>{saveSetting(storageKey+':age',ageSelect.value);render();updateURL(location.hash,true)});
 prev.addEventListener('click',()=>show(scope[scope.indexOf(current)-1]));next.addEventListener('click',()=>show(scope[scope.indexOf(current)+1]));
 article.addEventListener('click',event=>{
- const summary=event.target.closest('.reader-section>summary');if(summary){event.preventDefault();const details=summary.parentElement;const open=!details.open;for(const other of article.querySelectorAll('.reader-section'))other.open=false;details.open=open;if(open)saveSetting('youth-guide:audience',details.dataset.audience);return}
+ const summary=event.target.closest('details[data-audience]>summary');if(summary){event.preventDefault();const details=summary.parentElement,audience=details.dataset.audience,open=!details.open;sectionPreferences[audience]=open;for(const other of article.querySelectorAll('details[data-audience]'))if(other.dataset.audience===audience)other.open=open;saveSetting('youth-guide:sections',JSON.stringify(sectionPreferences));return}
  const link=event.target.closest('a');if(!link)return;const href=link.getAttribute('href');
  if(/^#K\d{3}$/.test(href)){event.preventDefault();const id=href.slice(1),index=indexById.get(id);if(index===undefined){showMissing(id);updateURL(href)}else show(index)}
  else if(/^#evidence(?:-K\d{3})?$/.test(href)){event.preventDefault();const details=document.getElementById('evidence');details.open=true;const target=document.getElementById(href.slice(1))||details;target.scrollIntoView({block:'start'});details.querySelector('summary').focus({preventScroll:true})}

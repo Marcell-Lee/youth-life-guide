@@ -77,6 +77,11 @@ try {
  const privatePage = await context.newPage();
  await privatePage.goto('http://127.0.0.1:4173/');
  assert.equal(await privatePage.locator('#article h1').count(),1);
+ await privatePage.waitForFunction(()=>document.querySelectorAll('#list a').length===83);
+ await privatePage.locator('.reader-section[data-audience="primary"]>summary').click();
+ await privatePage.evaluate(()=>location.hash='#K002');
+ await privatePage.waitForFunction(()=>document.getElementById('article').getAttribute('aria-label')===chapters.find(c=>c.id==='K002').title);
+ assert.equal(await privatePage.locator('.reader-section[data-audience="primary"]').evaluate(e=>e.open),false);
  console.log('PASS: manifest, public files, HTTP reading, clean copy, search, mobile navigation, resume, typography, editions, 404, blocked storage');
 } finally {
  if(browser) await browser.close();

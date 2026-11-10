@@ -15,12 +15,13 @@ const TOPIC_GROUPS = [
 const covered=TOPIC_GROUPS.flatMap(g=>g.ids);
 if(covered.length!==83||new Set(covered).size!==83)throw new Error('阅读目录分组必须完整覆盖 83 个主题');
 
-function readerChapterHTML(chapter, mode, preferred = 'primary') {
+function readerChapterHTML(chapter, mode, sectionState = {}) {
  const escape = value => value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
  const adultLabels=new Set(['成人与学校需要一起做的事','给成人的支持说明','给支持你的大人','给支持孩子的大人','给陪伴你的大人','给支持你的成年人','给陪伴 6—8 岁孩子的成年人','成人支持','大人和学校可以做什么']);
  const withAdultNotes=chapter.html.replace(/<h3>([\s\S]*?)<\/h3>\n?([\s\S]*?)(?=<h[23]>|$)/g,(full,title,body)=>{
   const label=title.replace(/<[^>]+>/g,'');
-  return adultLabels.has(label)?`<details class="adult-note"><summary>${escape(label)}</summary><div>${body}</div></details>`:full;
+  const open=typeof sectionState.adult==='boolean'?sectionState.adult:mode==='all';
+  return adultLabels.has(label)?`<details class="adult-note" data-audience="adult"${open?' open':''}><summary>${escape(label)}</summary><div>${body}</div></details>`:full;
  });
  const parts=withAdultNotes.replace('<p>综合正文</p>','').split(/(?=<h2>)/);
  const sections=parts.map((html,index)=>{
@@ -32,13 +33,12 @@ function readerChapterHTML(chapter, mode, preferred = 'primary') {
   const audience=mode==='all'&&/^(?:小学(?:版|读者)(?:[：:｜]|$)|(?:6[—－-]8|9[—－-]11)\s*岁)/.test(heading)?'primary':mode==='all'&&/^(?:中学(?:版|读者)(?:[：:｜]|$)|(?:9[—－-]17|12[—－-]17)\s*岁)/.test(heading)?'secondary':adultLabels.has(heading)?'adult':null;
   return {html,heading,headingHTML:match[1],audience,index,body:html.slice(match[0].length)};
  });
- const candidates=sections.filter(s=>s.audience&&s.audience!=='adult');
- const chosen=sections.find(s=>s.audience===preferred)||(mode==='all'?candidates[0]:null);
  return sections.map(section=>{
   if(!section.audience)return section.html;
-  const open=mode==='all'&&section===chosen?' open':'';
+  const expanded=typeof sectionState[section.audience]==='boolean'?sectionState[section.audience]:mode==='all';
+  const open=expanded?' open':'';
   // headingHTML has already passed the same Markdown renderer as the article.
-  return `<details class="reader-section" name="reader-${chapter.id}" data-audience="${section.audience}"${open}><summary>${section.headingHTML}</summary><div class="section-body">${section.body}</div></details>`;
+  return `<details class="reader-section" data-audience="${section.audience}"${open}><summary>${section.headingHTML}</summary><div class="section-body">${section.body}</div></details>`;
  }).join('');
 }
 

@@ -51,18 +51,38 @@ try {
  await p.evaluate(()=>show(chapters.findIndex(c=>c.id==='K050')));
  await p.goBack();assert.equal(new URL(p.url()).hash,'#K043');assert.match(await p.locator('#article h1').innerText(),/兴趣/);
  await p.goto(base+'?test=sections#K001');
- assert.equal(await p.locator('#article details[data-audience][open]').count(),1);
- assert.equal(await p.locator('#article details[data-audience="adult"]').evaluate(e=>e.open),false);
+ assert.equal(await p.locator('#article details[data-audience][open]').count(),3);
+ assert.equal(await p.locator('#article details[data-audience="adult"]').evaluate(e=>e.open),true);
  await p.goto(base+'?test=heading#K060');
  const sizes=await p.evaluate(()=>({body:parseFloat(getComputedStyle(document.getElementById('article')).fontSize),h3:parseFloat(getComputedStyle(document.querySelector('#article h3, #article .adult-note>summary')).fontSize)}));assert.ok(sizes.h3>=sizes.body);
- assert.equal(await p.locator('#article .adult-note').evaluate(e=>e.open),false);
- await p.goto(base+'?test=adult-heading#K023');assert.equal(await p.locator('#article details[data-audience="adult"]').evaluate(e=>e.open),false);
- await p.goto(base+'?test=age-sections#K081');assert.equal(await p.locator('#article details[data-audience="primary"][open]').count(),1);
+ assert.equal(await p.locator('#article .adult-note').evaluate(e=>e.open),true);
+ await p.goto(base+'?test=adult-heading#K023');assert.equal(await p.locator('#article details[data-audience="adult"]').evaluate(e=>e.open),true);
+ await p.goto(base+'?test=age-sections#K081');assert.equal(await p.locator('#article details[data-audience="primary"][open]').count(),await p.locator('#article details[data-audience="primary"]').count());
  for(const id of ['K026','K035','K082','K083']){
   await p.goto(base+'?test=child-label#'+id);
   assert.equal(await p.locator('#article details[data-audience="primary"][open]').count(),1,id+': child guidance must open even if its heading mentions adults');
   assert.equal(await p.locator('#article details[data-audience="adult"]').filter({hasText:/^小学版|^中学版/}).count(),0);
  }
+ const sections=await browser.newContext();await sections.addInitScript(()=>localStorage.setItem('youth-guide:audience','secondary'));
+ const s=await sections.newPage();await s.goto(base+'#K001');await s.waitForFunction(()=>document.querySelectorAll('#list a').length===83);
+ const expanded=audience=>s.locator(`#article .reader-section[data-audience="${audience}"]`).evaluate(e=>e.open);
+ assert.equal(await s.locator('#article .reader-section[open]').count(),3,'Old preferred-reader setting must not collapse sections');
+ await s.locator('.reader-section[data-audience="primary"]>summary').click();assert.equal(await expanded('primary'),false);assert.equal(await expanded('secondary'),true);assert.equal(await expanded('adult'),true);
+ await s.locator('.reader-section[data-audience="adult"]>summary').click();await s.goto(base+'#K002');
+ assert.equal(await expanded('primary'),false);assert.equal(await expanded('secondary'),true);assert.equal(await expanded('adult'),false);
+ await s.reload();assert.equal(await expanded('primary'),false);assert.equal(await expanded('secondary'),true);assert.equal(await expanded('adult'),false);
+ await s.locator('.reader-section[data-audience="primary"]>summary').click();assert.equal(await expanded('secondary'),true);assert.equal(await expanded('adult'),false);
+ await s.goto(base+'?q='+encodeURIComponent('成人与学校需要一起做的事')+'#K001');assert.equal(await expanded('adult'),false,'Search must respect a manually collapsed section');
+ await s.goto(base+'#K060');assert.ok(await s.locator('.adult-note').count());assert.equal(await s.locator('.adult-note[open]').count(),0,'Nested adult notes share the adult preference');
+ await s.locator('.adult-note>summary').first().click();assert.equal(await s.locator('.adult-note[open]').count(),await s.locator('.adult-note').count());
+ await s.goto(base+'#K001');assert.equal(await expanded('adult'),true);await s.locator('.reader-section[data-audience="secondary"]>summary').click();
+ await s.reload();assert.equal(await expanded('primary'),true);assert.equal(await expanded('secondary'),false);assert.equal(await expanded('adult'),true);
+ const fresh=await browser.newContext(),f=await fresh.newPage();await f.goto(base+'#K001');assert.equal(await f.locator('.reader-section[open]').count(),3,'Another device/profile starts with all sections open');
+ for(const audience of ['primary','secondary','adult'])await f.locator(`.reader-section[data-audience="${audience}"]>summary`).click();
+ await f.reload();assert.equal(await f.locator('.reader-section[open]').count(),0,'All three choices can remain closed');
+ await f.locator('.reader-section[data-audience="adult"]>summary').focus();await f.keyboard.press('Enter');assert.equal(await f.locator('.reader-section[open]').count(),1);
+ for(const invalid of ['broken','null','[]','{"primary":"false"}']){await f.evaluate(value=>localStorage.setItem('youth-guide:sections',value),invalid);await f.reload();assert.equal(await f.locator('.reader-section[open]').count(),3)}
+ await sections.close();await fresh.close();
  await p.goto(base+'小学版-离线试读.html?test=child-age#K020');
  assert.ok(await p.locator('#article h2').filter({hasText:'6—8 岁'}).isVisible());
  assert.ok(await p.locator('#article h2').filter({hasText:'9—11 岁'}).isVisible());
